@@ -1,0 +1,814 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 18%, 93%);
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+#navitem  i{
+  
+  font-size: 30px;
+   display: none; 
+}
+#navitem {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  gap: 50px;
+  font-size: 25px;
+  padding-right: 30px;
+}
+
+.navbar  #navitem a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+#logo {
+  margin-bottom: -75px;
+  width: 80px;
+  height: 80px;
+}
+
+/* 320px screen */
+@media screen and (max-width: 320px) {
+  .navbar {
+    padding: 0 10px; 
+      width: 100%;
+  }
+
+  #navitem {
+    font-size: 16px; 
+    gap: 10px; 
+  }
+
+  #navitem a {
+    padding: 8px;
+    font-size: 16px; 
+  }
+
+  #navitem i {
+    font-size: 25px; 
+  }
+}
+
+/* 480px screen */
+ @media screen and (max-width: 480px) {
+   #logo {
+display: none;
+  } 
+   .navbar{
+    width: 100%;
+  }
+
+  #navitem a {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  } 
+} 
+
+/* 640px screen */
+@media screen and (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #navitem {
+    gap: 20px;
+    font-size: 20px;
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  #logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  #navitem i {
+    display: block;
+    font-size: 40px;
+    color: #4b4b4b;
+  }
+}
+
+/* 768px screen */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  #navitem {
+    gap: 25px;
+    font-size: 22px;
+    flex-direction: column;
+  }
+
+  #logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+}
+
+/* 1024px screen */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    height: 80px;
+    padding: 10px 0;
+  }
+
+  #navitem {
+    gap: 30px;
+    font-size: 24px;
+    flex-direction: row;
+    padding-right: 30px;
+  }
+
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  #navitem i {
+    display: none;
+  }
+}
+
+/* background  */
+.background {
+  background-image: url(assets/background.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position-y: -116px;
+  background-position-x: center;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+}
+.background .heading {
+  margin-left: 680px;
+}
+input {
+  border-radius: 9px;
+  margin-top: 25px;
+  width: 490px;
+  height: 50px;
+  border: #4b4b4b;
+  border: 3px solid #333;
+}
+input::placeholder {
+  font-size: 20px;
+  color: #555;
+}
+
+/* 320px screen background image */
+@media (max-width: 320px) {
+  .background {
+    background-position-y: 0; 
+    background-size: cover;
+    height: 100vh; 
+  }
+  h1 {
+    font-size: 30px; 
+    margin: 0 10px; 
+  }
+  .background .heading {
+    font-size: 25px; 
+    margin-left: 0; 
+    text-align: center; 
+  }
+  input {
+    margin-left: 5px; 
+    height: 30px;
+    width: 90%; 
+    margin-top: 12px;
+    font-size: 14px; 
+  }
+  input::placeholder {
+    font-size: 14px;
+  }
+}
+
+/* 480px screen */
+@media (max-width: 480px) {
+  .background {
+    background-position-y: 0; 
+    background-size: cover;
+    height: 100vh;
+  }
+  h1 {
+    font-size: 40px;
+    text-align: center; 
+    margin: 0 20px; 
+  }
+  .background .heading {
+    margin-left: 20px;
+    font-size: 30px;
+    margin-left: 0; 
+    text-align: center; 
+  }
+  input {
+  
+    margin-left: 100px;
+    height: 30px;
+    width: 60%; 
+    margin-top: 15px;
+    font-size: 16px; 
+  }
+  input::placeholder {
+    font-size: 15px;
+  }
+}
+
+/* Media Query for 640px  */
+@media (max-width: 640px) {
+  .background {
+    background-position-y: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  h1 {
+    font-size: 45px; 
+    text-align: center;
+    margin: 0 15px; 
+  }
+  .background .heading {
+    font-size: 30px; 
+    margin-left: 0;
+    text-align: center;
+  }
+  input {
+    margin-left: 5px; 
+    height: 35px;
+    width: 80%; 
+    margin-top: 20px;
+    font-size: 16px; 
+  }
+  input::placeholder {
+    font-size: 14px; 
+  }
+}
+
+/* Media Query for 768px */
+@media (max-width: 768px) {
+  .background {
+    background-position-y: center; 
+    background-size: cover;
+    height: 100vh;
+  }
+  h1 {
+    font-size: 50px; 
+    text-align: center;
+    margin: 0 20px;
+  }
+  .background .heading {
+    font-size: 35px;
+    margin-left: 0;
+    text-align: center;
+  }
+  input {
+    margin-left: 10px;
+    height: 35px; 
+    width: 70%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  input::placeholder {
+    font-size: 16px;
+  }
+}
+
+/* Media Query for screen  */
+@media (max-width: 1024px) {
+  .background {
+    background-position-y: center; 
+    background-size: cover;
+    height: 100vh;
+  }
+  h1 {
+    font-size: 60px; 
+    text-align: center;
+    margin: 0 30px;
+  }
+  .background .heading {
+    font-size: 40px;
+    margin-left: 0;
+    text-align: center;
+  }
+  input {
+    margin-left: 10px;
+    height: 40px; 
+    width: 60%;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  input::placeholder {
+    font-size: 17px;
+  }
+}
+
+
+/* bride images section */
+.para {
+  padding: 55px;
+  margin-top: 10px;
+  font-size: large;
+  line-height: normal;
+  word-spacing: 2px;
+}
+.mainContainer {
+  height: 100%;
+}
+
+.brideImage {
+  margin-top: 80px;
+  display: flex;
+   flex-direction: row; 
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 16px;
+ 
+}
+ .brideImage img{
+   width: 20%; 
+  height: auto;
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 5px gray;
+}
+
+/* 320px screen */
+@media (max-width: 320px) {
+  .para {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-spacing: 1px;
+  }
+
+  .brideImage {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brideImage img {
+    width: 80%;
+  }
+
+  .h1 {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+}
+
+/* 480px screen */
+@media (max-width: 480px) {
+  .para {
+    padding: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    word-spacing: 1.5px;
+  }
+
+  .brideImage {
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brideImage img {
+    width: 70%;
+  }
+
+  .h1 {
+    margin-top: 60px;
+    font-size: 24px;
+  }
+}
+
+/* 640px screen */
+@media (max-width: 640px) {
+  .para {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    word-spacing: 2px;
+  }
+
+  .brideImage {
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brideImage img {
+    width: 60%;
+  }
+
+  .h1 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+}
+
+/* 768px screen */
+@media (max-width: 768px) {
+  .para {
+    padding: 35px;
+    font-size: 20px;
+    line-height: 1.7;
+    word-spacing: 2px;
+  }
+
+  .brideImage {
+    margin-top: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .brideImage img {
+    width: 45%;
+  }
+
+  .h1 {
+    margin-top: 90px;
+    font-size: 32px;
+  }
+}
+
+/* 1024px screen */
+@media (max-width: 1024px) {
+  .para {
+    padding: 40px;
+    font-size: 22px;
+    line-height: 1.8;
+    word-spacing: 2.5px;
+  }
+
+  .brideImage {
+    margin-top: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .brideImage img {
+    width: 35%;
+  }
+
+  .h1 {
+    margin-top: 100px;
+    font-size: 36px;
+  }
+}
+
+
+
+/* Engagement makeup section */
+.engImage {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.engImage img{
+  width: 20%;
+  height: 18%px;
+}
+.h1 {
+  text-align: center;
+  margin-top: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 5px gray;
+}
+
+/* 320px screen */
+@media (max-width: 320px) {
+  .para {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-spacing: 1px;
+  }
+
+  .brideImage {
+    margin-top: 40px;
+  }
+
+  .brideImage img {
+    width: 80%;
+  }
+
+  .h1 {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+}
+
+/* 480px screen */
+@media (max-width: 480px) {
+  .para {
+    padding: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    word-spacing: 1.5px;
+  }
+
+  .brideImage {
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brideImage img {
+    width: 70%;
+  }
+
+  .h1 {
+    margin-top: 60px;
+    font-size: 24px;
+  }
+}
+
+/* 640px screen */
+@media (max-width: 640px) {
+  .para {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    word-spacing: 2px;
+  }
+
+  .brideImage {
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brideImage img {
+    width: 60%;
+  }
+
+  .h1 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+}
+
+/* 768px screen */
+@media (max-width: 768px) {
+  .para {
+    padding: 35px;
+    font-size: 20px;
+    line-height: 1.7;
+    word-spacing: 2px;
+  }
+
+  .brideImage {
+    margin-top: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .brideImage img {
+    width: 45%;
+  }
+
+  .h1 {
+    margin-top: 90px;
+    font-size: 32px;
+  }
+}
+
+/* 1024px screen */
+@media (max-width: 1024px) {
+  .para {
+    padding: 40px;
+    font-size: 22px;
+    line-height: 1.8;
+    word-spacing: 2.5px;
+  }
+
+  .brideImage {
+    margin-top: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .brideImage img {
+    width: 35%;
+  }
+
+  .h1 {
+    margin-top: 100px;
+    font-size: 36px;
+  }
+}
+
+
+/* footer */
+
+.footer {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 450px;
+  background-color: #dfbfa8;
+}
+#h2 {
+  margin: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px gray;
+}
+#para2 {
+  width: 900px;
+  padding: 10px;
+  margin-top: 9px;
+  font-size: large;
+  line-height: normal;
+  word-spacing: 2px;
+}
+.icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+#icon1 {
+  font-size: 40px;
+  color: blue;
+}
+#icon2 {
+  font-size: 40px;
+  color: palevioletred;
+}
+#icon3 {
+  font-size: 40px;
+  color: green;
+}
+
+/* 320px screen */
+@media (max-width: 320px) {
+  .footer {
+    height: 350px;
+  }
+
+  #h2 {
+    margin: 20px;
+    font-size: 30px;
+  }
+
+  #para2 {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .icons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  #icon1, #icon2, #icon3 {
+    font-size: 25px;
+  }
+}
+
+/* 480px screen */
+@media (max-width: 480px) {
+  .footer {
+    height: 400px;
+  }
+
+  #h2 {
+    margin: 30px;
+    font-size: 40px;
+  }
+
+  #para2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .icons {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  #icon1, #icon2, #icon3 {
+    font-size: 30px;
+  }
+}
+
+/* 640px screen */
+@media (max-width: 640px) {
+  .footer {
+    height: 400px;
+  }
+
+  #h2 {
+    margin: 40px;
+    font-size: 50px;
+  }
+
+  #para2 {
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .icons {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #icon1, #icon2, #icon3 {
+    font-size: 35px;
+  }
+}
+
+/* 768px screen */
+@media (max-width: 768px) {
+  .footer {
+    height: 420px;
+  }
+
+  #h2 {
+    margin: 50px;
+    font-size: 60px;
+  }
+
+  #para2 {
+    width: 80%;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .icons {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  #icon1, #icon2, #icon3 {
+    font-size: 38px;
+  }
+}
+
+/* 1024px screen */
+@media (max-width: 1024px) {
+  .footer {
+    height: 450px;
+  }
+
+  #h2 {
+    margin: 50px;
+    font-size: 70px;
+  }
+
+  #para2 {
+    width: 80%;
+    padding: 20px;
+    font-size: 22px;
+  }
+
+  .icons {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  #icon1, #icon2, #icon3 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,199 @@
+/* *{
+  padding: 0;
+  margin: 0;
+}
+.aboutContainer1{
+  display: flex;
+  margin-top: 80px;
+  gap: 10px;
+  }
+.aboutContainer2{
+  display:flex ;
+  justify-content: space-between;
+  }
+  .aboutContainer3{
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 15px;
+    }
+    .megaSale
+    {
+      font-weight: bold;
+  font-size: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 5px gray;
+}
+    
+  .para{
+    padding: 80px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    word-spacing: 3px;
+    width: 700px;
+    text-align: left;
+  }
+  img{
+    width: 100%;;
+    height: 700px;
+    margin-left: 5px;
+    border-radius: 5px;
+  }
+  .btn{
+    font-weight: bold;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(85, 85, 129);
+  cursor: pointer;
+  }
+  .btn:hover{
+    background-color: rgb(128, 128, 173);
+  }
+  a{
+    text-decoration: none;
+    color:black;
+   } */
+  
+  /* mediaaaaaaaa */
+  /* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+/* About Container 1 */
+.aboutContainer1 {
+  width: 100%;
+  display: flex;
+  margin-top: 80px;
+  gap: 10px;
+}
+
+.aboutContainer2 {
+  justify-content: space-between;
+  display: flex;
+gap: 15%;
+  align-items: center;
+}
+
+.aboutContainer3 {
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+/* Mega Sale */
+.megaSale {
+  font-weight: bold;
+  font-size: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 5px gray;
+}
+
+/* Paragraph */
+.para {
+  padding: 80px;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  word-spacing: 3px;
+  width: 700px;
+  text-align: left;
+}
+
+/* Image */
+img {
+  width: 100%;
+  height: 700px;
+  margin-left: 5px;
+  border-radius: 5px;
+  margin-left: 60px;
+}
+
+/* Button */
+.btn {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(85, 85, 129);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(128, 128, 173);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Media Query for 480px or smaller devices */
+@media (max-width: 480px) {
+  /* Adjust the main aboutContainer1 to stack vertically */
+  .aboutContainer1 {
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 30px;
+    gap: 20px; /* Increase gap between elements */
+  }
+
+  /* Adjust aboutContainer2 to stack the inner content */
+  .aboutContainer2 {
+    flex-direction: column; /* Stack the two parts of the container */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Adjust aboutContainer3 for small screens */
+  .aboutContainer3 {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  /* Adjust megaSale font size */
+  .megaSale {
+    font-size: 50px; /* Smaller font size for mobile */
+  }
+
+  /* Adjust paragraph styling for mobile */
+  .para {
+    padding: 20px; /* Reduced padding */
+    font-size: 16px; /* Smaller font size */
+    width: 100%; /* Take up full width */
+    text-align: center; /* Center the text */
+  }
+
+  /* Adjust image size for mobile */
+  img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0;
+  }
+
+  /* Adjust button for mobile */
+  .btn {
+    width: 300px; /* Full width button */
+    font-size: 30px; /* Smaller font size */
+    padding: 12px; /* Adjust padding */
+  }
+}
+
+/*  */
+@media screen and (max-width : 320px) {
+  .btn {
+    width: 200px; 
+    font-size: 20px;
+  }
+  .megaSale{
+    font-size: 30px;
+  }
+}
+
+
+
