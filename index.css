@@ -17,7 +17,7 @@
 #navitem  i{
   
   font-size: 30px;
-   display: none; 
+  display: block;  
 }
 #navitem {
   padding-left: 20px;
@@ -39,26 +39,111 @@
 }
 
 /* 320px screen */
-@media screen and (max-width: 320px) {
+
+/* Media Query for 320px Screen */
+@media (max-width: 320px) {
   .navbar {
-    padding: 0 10px; 
-      width: 100%;
+    justify-content: center; /* Center align the content */
+  }
+
+  #logo {
+    display: none; /* Hide the logo */
   }
 
   #navitem {
-    font-size: 16px; 
-    gap: 10px; 
+    width: 210px;
+    /* Center align nav items */
+    gap: 10px; /* Reduce gap between nav items */
+    font-size: 18px; /* Adjust font size */
   }
 
   #navitem a {
-    padding: 8px;
+   
+    text-align: center; 
     font-size: 16px; 
+  }
+}
+
+/* 369px screen */
+/* Media Query for 369px Screen */
+@media (max-width: 369px) {
+  .navbar {
+    flex-direction: row; 
+    align-items: center;
+    height: auto; /* Dynamic height adjustment */
+    padding: 10px; /* Adjusted padding for spacing */
+    gap: 10px; /* Reduced gap between items */
+  }
+
+  #navitem {
+    margin-right: 20px;
+    gap: 10px; /* Smaller gap between items */
+    font-size: 18px; /* Smaller font size for better fit */
+    padding: 0; /* Removed extra padding */
+  }
+
+  #logo {
+    display: none;
   }
 
   #navitem i {
-    font-size: 25px; 
+    font-size: 20px; /* Reduced icon size */
   }
 }
+
+
+
+/* 375px screen */
+@media (max-width: 375px) {
+  .navbar {
+    flex-direction: row; 
+    height: auto; 
+    padding: 10px; 
+    gap: 10px; 
+  }
+  #navitem {
+    margin-left: 55px;
+    width: 250px;
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    padding: 0; 
+  }
+  #logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* 425px screen  */
+@media (max-width: 425px) {
+  .navbar {
+    display: flex;
+    height: auto; 
+    gap: 15px;
+    padding: 10px; 
+  }
+
+  #navitem {
+    width: 300px;
+    margin-left: 55px;
+  padding-left: 60px;
+  justify-content:center;
+    align-items: center;
+    gap: 15px; /* Reduced gap between nav items */
+    font-size: 18px; /* Smaller font size for better fit */
+    padding: 0; /* Remove extra padding */
+  }
+  #logo {
+    display: none;
+  }
+
+  #navitem i {
+    font-size: 25px; /* Smaller icon size */
+  }
+}
+
+
 
 /* 480px screen */
  @media screen and (max-width: 480px) {
@@ -79,15 +164,17 @@ display: none;
 /* 640px screen */
 @media screen and (max-width: 640px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+     justify-content: space-between; 
+    align-items: center;
     height: auto;
     padding: 10px 0;
   }
 
   #navitem {
+    margin-right: 15px;
     gap: 20px;
     font-size: 20px;
-    flex-direction: column;
     padding-right: 0;
   }
 
@@ -107,7 +194,6 @@ display: none;
 /* 768px screen */
 @media screen and (max-width: 768px) {
   .navbar {
-    flex-direction: column;
     height: auto;
     padding: 15px 0;
   }
@@ -115,7 +201,6 @@ display: none;
   #navitem {
     gap: 25px;
     font-size: 22px;
-    flex-direction: column;
   }
 
   #logo {
@@ -128,16 +213,17 @@ display: none;
 /* 1024px screen */
 @media screen and (max-width: 1024px) {
   .navbar {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   #navitem {
-    gap: 30px;
-    font-size: 24px;
-    flex-direction: row;
-    padding-right: 30px;
+    gap: 10px;
+    font-size: 25px;
   }
 
   #logo {
@@ -145,8 +231,8 @@ display: none;
     height: 80px;
   }
 
-  #navitem i {
-    display: none;
+  #navitem a{
+    margin-left: 15px;
   }
 }
 
@@ -331,7 +417,6 @@ input::placeholder {
   }
 }
 
-
 /* bride images section */
 .para {
   padding: 55px;
@@ -370,18 +455,18 @@ input::placeholder {
   .para {
     padding: 20px;
     font-size: 14px;
-    line-height: 1.4;
-    word-spacing: 1px;
+    /* line-height: 1.4; */
+    /* word-spacing: 1px; */
   }
 
   .brideImage {
-    margin-top: 40px;
+    margin-top: 20px;
     flex-direction: column;
     align-items: center;
   }
 
   .brideImage img {
-    width: 80%;
+    width: 100%;
   }
 
   .h1 {
@@ -395,8 +480,8 @@ input::placeholder {
   .para {
     padding: 25px;
     font-size: 16px;
-    line-height: 1.5;
-    word-spacing: 1.5px;
+    /* line-height: 1.5;
+    word-spacing: 1.5px; */
   }
 
   .brideImage {
@@ -406,7 +491,7 @@ input::placeholder {
   }
 
   .brideImage img {
-    width: 70%;
+    width: 100%;
   }
 
   .h1 {
@@ -420,8 +505,8 @@ input::placeholder {
   .para {
     padding: 30px;
     font-size: 18px;
-    line-height: 1.6;
-    word-spacing: 2px;
+    /* line-height: 1.6;
+    word-spacing: 2px; */
   }
 
   .brideImage {
@@ -431,7 +516,7 @@ input::placeholder {
   }
 
   .brideImage img {
-    width: 60%;
+    width: 100%;
   }
 
   .h1 {
@@ -456,7 +541,7 @@ input::placeholder {
   }
 
   .brideImage img {
-    width: 45%;
+    width: 100%;
   }
 
   .h1 {
@@ -475,13 +560,13 @@ input::placeholder {
   }
 
   .brideImage {
-    margin-top: 90px;
+    margin-top: 30px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .brideImage img {
-    width: 35%;
+    width: 90%;
   }
 
   .h1 {
@@ -502,7 +587,7 @@ input::placeholder {
 }
 .engImage img{
   width: 20%;
-  height: 18%px;
+  /* height: 18%px; */
 }
 .h1 {
   text-align: center;
@@ -520,12 +605,12 @@ input::placeholder {
     word-spacing: 1px;
   }
 
-  .brideImage {
+  .engImage {
     margin-top: 40px;
   }
 
-  .brideImage img {
-    width: 80%;
+  .engImage img {
+    width: 100%;
   }
 
   .h1 {
@@ -543,14 +628,14 @@ input::placeholder {
     word-spacing: 1.5px;
   }
 
-  .brideImage {
+  .engImage {
     margin-top: 60px;
     flex-direction: column;
     align-items: center;
   }
 
-  .brideImage img {
-    width: 70%;
+  .engImage img{
+    width: 100%;
   }
 
   .h1 {
@@ -568,14 +653,13 @@ input::placeholder {
     word-spacing: 2px;
   }
 
-  .brideImage {
+  .engImage {
     margin-top: 70px;
     flex-direction: column;
-    align-items: center;
   }
 
-  .brideImage img {
-    width: 60%;
+  .engImage img {
+    width: 100%;
   }
 
   .h1 {
@@ -593,14 +677,14 @@ input::placeholder {
     word-spacing: 2px;
   }
 
-  .brideImage {
+  .engImage {
     margin-top: 80px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
 
-  .brideImage img {
-    width: 45%;
+  .engImage img {
+    width: 100%;
   }
 
   .h1 {
@@ -617,23 +701,21 @@ input::placeholder {
     line-height: 1.8;
     word-spacing: 2.5px;
   }
-
-  .brideImage {
-    margin-top: 90px;
+  .engImage {
+    margin-top: 30px;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
-
-  .brideImage img {
-    width: 35%;
+  .engImage img {
+    text-align: center;
+    width: 90%;
   }
-
   .h1 {
     margin-top: 100px;
     font-size: 36px;
   }
 }
-
 
 /* footer */
 
@@ -662,7 +744,7 @@ input::placeholder {
 }
 .icons {
   display: flex;
-  margin-top: 30px;
+  margin-top: 100px;
   gap: 20px;
 }
 #icon1 {
@@ -681,7 +763,7 @@ input::placeholder {
 /* 320px screen */
 @media (max-width: 320px) {
   .footer {
-    height: 350px;
+    height: 600px;
   }
 
   #h2 {
@@ -705,10 +787,42 @@ input::placeholder {
   }
 }
 
+/* 425px screen */
+
+/* Media Query for 425px screens */
+@media (max-width: 425px) {
+  .footer {
+    margin-top: 50px; /* Reduce margin */
+    padding: 15px;
+  }
+
+  #h2 {
+    text-align: center;
+    font-size: 35px; 
+    margin: 10px;
+  }
+
+  #para2 {
+    font-size: small; 
+    width: 100%; 
+  }
+
+  .icons {
+    margin-top: 20px; 
+    gap: 10px; 
+  }
+
+  #icon1, #icon2, #icon3 {
+    font-size: 25px; 
+  }
+}
+
+
 /* 480px screen */
 @media (max-width: 480px) {
   .footer {
-    height: 400px;
+    /* height: 400px; */
+    height: 600px;
   }
 
   #h2 {
@@ -735,7 +849,8 @@ input::placeholder {
 /* 640px screen */
 @media (max-width: 640px) {
   .footer {
-    height: 400px;
+    /* height: 400px; */
+    height: 600px;
   }
 
   #h2 {
@@ -762,7 +877,8 @@ input::placeholder {
 /* 768px screen */
 @media (max-width: 768px) {
   .footer {
-    height: 420px;
+    /* height: 420px; */
+    height: 600px;
   }
 
   #h2 {
@@ -789,7 +905,8 @@ input::placeholder {
 /* 1024px screen */
 @media (max-width: 1024px) {
   .footer {
-    height: 450px;
+    /* height: 450px; */
+    height: 600px;
   }
 
   #h2 {
@@ -804,11 +921,13 @@ input::placeholder {
   }
 
   .icons {
+    margin-bottom: 50px;
     flex-direction: row;
     gap: 30px;
   }
 
   #icon1, #icon2, #icon3 {
+    margin-bottom: 10px;
     font-size: 40px;
   }
 }
