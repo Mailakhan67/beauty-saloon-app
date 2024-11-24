@@ -14,10 +14,9 @@
   background-color: rgba(0, 0, 0, 0.1);
   height: 80px;
 }
-#navitem  i{
-  
+#navitem i {
   font-size: 30px;
-  display: block;  
+  display: block;
 }
 #navitem {
   padding-left: 20px;
@@ -28,7 +27,7 @@
   padding-right: 30px;
 }
 
-.navbar  #navitem a {
+.navbar #navitem a {
   text-decoration: none;
   color: #4b4b4b;
 }
@@ -39,47 +38,52 @@
 }
 
 /* 320px screen */
-
-/* Media Query for 320px Screen */
 @media (max-width: 320px) {
   .navbar {
-    justify-content: center; /* Center align the content */
+    justify-content: center;
   }
 
   #logo {
-    display: none; /* Hide the logo */
+    display: none;
   }
 
   #navitem {
-    width: 210px;
-    /* Center align nav items */
-    gap: 10px; /* Reduce gap between nav items */
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px;
   }
 
   #navitem a {
-   
-    text-align: center; 
-    font-size: 16px; 
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/* 350px screen */
+@media (max-width: 350px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #navitem {
+    gap: 10px;
+    align-items: center;
   }
 }
 
 /* 369px screen */
-/* Media Query for 369px Screen */
 @media (max-width: 369px) {
   .navbar {
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
-    height: auto; /* Dynamic height adjustment */
-    padding: 10px; /* Adjusted padding for spacing */
-    gap: 10px; /* Reduced gap between items */
+    height: auto;
+    padding: 10px;
+    gap: 10px;
   }
-
   #navitem {
-    margin-right: 20px;
-    gap: 10px; /* Smaller gap between items */
-    font-size: 18px; /* Smaller font size for better fit */
-    padding: 0; /* Removed extra padding */
+    gap: 10px;
+    font-size: 18px;
+    padding: 0;
   }
 
   #logo {
@@ -87,27 +91,24 @@
   }
 
   #navitem i {
-    font-size: 20px; /* Reduced icon size */
+    font-size: 20px;
   }
 }
-
-
 
 /* 375px screen */
 @media (max-width: 375px) {
   .navbar {
-    flex-direction: row; 
-    height: auto; 
-    padding: 10px; 
-    gap: 10px; 
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
   }
   #navitem {
-    margin-left: 55px;
-    width: 250px;
+    width: 350px;
     display: flex;
     gap: 8px;
     font-size: 16px;
-    padding: 0; 
+    padding: 0;
   }
   #logo {
     width: 60px;
@@ -119,60 +120,58 @@
 @media (max-width: 425px) {
   .navbar {
     display: flex;
-    height: auto; 
+    height: auto;
     gap: 15px;
-    padding: 10px; 
+    padding: 10px;
   }
 
   #navitem {
-    width: 300px;
-    margin-left: 55px;
-  padding-left: 60px;
-  justify-content:center;
+    justify-content: center;
     align-items: center;
-    gap: 15px; /* Reduced gap between nav items */
-    font-size: 18px; /* Smaller font size for better fit */
-    padding: 0; /* Remove extra padding */
+    gap: 15px;
+    font-size: 18px;
+    padding: 0;
   }
   #logo {
     display: none;
   }
 
   #navitem i {
-    font-size: 25px; /* Smaller icon size */
+    font-size: 25px;
   }
 }
 
-
-
 /* 480px screen */
- @media screen and (max-width: 480px) {
-   #logo {
-display: none;
-  } 
-   .navbar{
+@media screen and (max-width: 480px) {
+  #logo {
+    display: none;
+  }
+  .navbar {
     width: 100%;
   }
 
+  #navitem {
+    margin-left: 15px;
+  }
   #navitem a {
     padding: 10px;
     text-align: center;
     font-size: 18px;
-  } 
-} 
+  }
+}
 
 /* 640px screen */
 @media screen and (max-width: 640px) {
   .navbar {
     flex-direction: row;
-     justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     height: auto;
     padding: 10px 0;
   }
 
   #navitem {
-    margin-right: 15px;
+    margin-right: 25px;
     gap: 20px;
     font-size: 20px;
     padding-right: 0;
@@ -231,7 +230,7 @@ display: none;
     height: 80px;
   }
 
-  #navitem a{
+  #navitem a {
     margin-left: 15px;
   }
 }
@@ -274,25 +273,25 @@ input::placeholder {
 /* 320px screen background image */
 @media (max-width: 320px) {
   .background {
-    background-position-y: 0; 
+    background-position-y: 0;
     background-size: cover;
-    height: 100vh; 
+    height: 100vh;
   }
   h1 {
-    font-size: 30px; 
-    margin: 0 10px; 
+    font-size: 30px;
+    margin: 0 10px;
   }
   .background .heading {
-    font-size: 25px; 
-    margin-left: 0; 
-    text-align: center; 
+    font-size: 25px;
+    margin-left: 0;
+    text-align: center;
   }
   input {
-    margin-left: 5px; 
+    margin-left: 5px;
     height: 30px;
-    width: 90%; 
+    width: 90%;
     margin-top: 12px;
-    font-size: 14px; 
+    font-size: 14px;
   }
   input::placeholder {
     font-size: 14px;
@@ -302,28 +301,27 @@ input::placeholder {
 /* 480px screen */
 @media (max-width: 480px) {
   .background {
-    background-position-y: 0; 
+    background-position-y: 0;
     background-size: cover;
     height: 100vh;
   }
   h1 {
     font-size: 40px;
-    text-align: center; 
-    margin: 0 20px; 
+    text-align: center;
+    margin: 0 20px;
   }
   .background .heading {
     margin-left: 20px;
     font-size: 30px;
-    margin-left: 0; 
-    text-align: center; 
+    margin-left: 0;
+    text-align: center;
   }
   input {
-  
     margin-left: 100px;
     height: 30px;
-    width: 60%; 
+    width: 60%;
     margin-top: 15px;
-    font-size: 16px; 
+    font-size: 16px;
   }
   input::placeholder {
     font-size: 15px;
@@ -338,36 +336,36 @@ input::placeholder {
     height: 100vh;
   }
   h1 {
-    font-size: 45px; 
+    font-size: 45px;
     text-align: center;
-    margin: 0 15px; 
+    margin: 0 15px;
   }
   .background .heading {
-    font-size: 30px; 
+    font-size: 30px;
     margin-left: 0;
     text-align: center;
   }
   input {
-    margin-left: 5px; 
+    margin-left: 5px;
     height: 35px;
-    width: 80%; 
+    width: 80%;
     margin-top: 20px;
-    font-size: 16px; 
+    font-size: 16px;
   }
   input::placeholder {
-    font-size: 14px; 
+    font-size: 14px;
   }
 }
 
 /* Media Query for 768px */
 @media (max-width: 768px) {
   .background {
-    background-position-y: center; 
+    background-position-y: center;
     background-size: cover;
     height: 100vh;
   }
   h1 {
-    font-size: 50px; 
+    font-size: 50px;
     text-align: center;
     margin: 0 20px;
   }
@@ -378,7 +376,7 @@ input::placeholder {
   }
   input {
     margin-left: 10px;
-    height: 35px; 
+    height: 35px;
     width: 70%;
     margin-top: 20px;
     font-size: 18px;
@@ -391,12 +389,12 @@ input::placeholder {
 /* Media Query for screen  */
 @media (max-width: 1024px) {
   .background {
-    background-position-y: center; 
+    background-position-y: center;
     background-size: cover;
     height: 100vh;
   }
   h1 {
-    font-size: 60px; 
+    font-size: 60px;
     text-align: center;
     margin: 0 30px;
   }
@@ -407,7 +405,7 @@ input::placeholder {
   }
   input {
     margin-left: 10px;
-    height: 40px; 
+    height: 40px;
     width: 60%;
     margin-top: 25px;
     font-size: 18px;
@@ -432,14 +430,13 @@ input::placeholder {
 .brideImage {
   margin-top: 80px;
   display: flex;
-   flex-direction: row; 
+  flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 16px;
- 
 }
- .brideImage img{
-   width: 20%; 
+.brideImage img {
+  width: 20%;
   height: auto;
 }
 
@@ -455,8 +452,6 @@ input::placeholder {
   .para {
     padding: 20px;
     font-size: 14px;
-    /* line-height: 1.4; */
-    /* word-spacing: 1px; */
   }
 
   .brideImage {
@@ -480,8 +475,6 @@ input::placeholder {
   .para {
     padding: 25px;
     font-size: 16px;
-    /* line-height: 1.5;
-    word-spacing: 1.5px; */
   }
 
   .brideImage {
@@ -505,8 +498,6 @@ input::placeholder {
   .para {
     padding: 30px;
     font-size: 18px;
-    /* line-height: 1.6;
-    word-spacing: 2px; */
   }
 
   .brideImage {
@@ -575,8 +566,6 @@ input::placeholder {
   }
 }
 
-
-
 /* Engagement makeup section */
 .engImage {
   margin-top: 80px;
@@ -585,7 +574,7 @@ input::placeholder {
   flex-wrap: wrap;
   gap: 16px;
 }
-.engImage img{
+.engImage img {
   width: 20%;
   /* height: 18%px; */
 }
@@ -634,7 +623,7 @@ input::placeholder {
     align-items: center;
   }
 
-  .engImage img{
+  .engImage img {
     width: 100%;
   }
 
@@ -720,7 +709,7 @@ input::placeholder {
 /* footer */
 
 .footer {
-  margin-top: 140px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 
@@ -737,7 +726,7 @@ input::placeholder {
 #para2 {
   width: 900px;
   padding: 10px;
-  margin-top: 9px;
+  margin-top: 3px;
   font-size: large;
   line-height: normal;
   word-spacing: 2px;
@@ -763,10 +752,11 @@ input::placeholder {
 /* 320px screen */
 @media (max-width: 320px) {
   .footer {
-    height: 600px;
+    height: auto;
   }
 
   #h2 {
+    margin-bottom: 50px;
     margin: 20px;
     font-size: 30px;
   }
@@ -778,11 +768,14 @@ input::placeholder {
   }
 
   .icons {
+    margin-bottom: 60px;
     flex-direction: row;
     gap: 10px;
   }
 
-  #icon1, #icon2, #icon3 {
+  #icon1,
+  #icon2,
+  #icon3 {
     font-size: 25px;
   }
 }
@@ -792,40 +785,42 @@ input::placeholder {
 /* Media Query for 425px screens */
 @media (max-width: 425px) {
   .footer {
-    margin-top: 50px; /* Reduce margin */
+    height: auto;
+    margin-top: 50px;
     padding: 15px;
   }
 
   #h2 {
     text-align: center;
-    font-size: 35px; 
-    margin: 10px;
+    font-size: 35px;
+    margin: 8px;
   }
 
   #para2 {
-    font-size: small; 
-    width: 100%; 
+    font-size: small;
+    width: 100%;
   }
 
   .icons {
-    margin-top: 20px; 
-    gap: 10px; 
+    margin-top: 20px;
+    gap: 10px;
   }
 
-  #icon1, #icon2, #icon3 {
-    font-size: 25px; 
+  #icon1,
+  #icon2,
+  #icon3 {
+    font-size: 25px;
   }
 }
-
 
 /* 480px screen */
 @media (max-width: 480px) {
   .footer {
-    /* height: 400px; */
-    height: 600px;
+    height: auto;
   }
 
   #h2 {
+    width: 200px;
     margin: 30px;
     font-size: 40px;
   }
@@ -841,7 +836,9 @@ input::placeholder {
     gap: 15px;
   }
 
-  #icon1, #icon2, #icon3 {
+  #icon1,
+  #icon2,
+  #icon3 {
     font-size: 30px;
   }
 }
@@ -849,8 +846,7 @@ input::placeholder {
 /* 640px screen */
 @media (max-width: 640px) {
   .footer {
-    /* height: 400px; */
-    height: 600px;
+    height: auto;
   }
 
   #h2 {
@@ -869,7 +865,9 @@ input::placeholder {
     gap: 20px;
   }
 
-  #icon1, #icon2, #icon3 {
+  #icon1,
+  #icon2,
+  #icon3 {
     font-size: 35px;
   }
 }
@@ -877,10 +875,8 @@ input::placeholder {
 /* 768px screen */
 @media (max-width: 768px) {
   .footer {
-    /* height: 420px; */
-    height: 600px;
+    height: auto;
   }
-
   #h2 {
     margin: 50px;
     font-size: 60px;
@@ -897,7 +893,9 @@ input::placeholder {
     gap: 25px;
   }
 
-  #icon1, #icon2, #icon3 {
+  #icon1,
+  #icon2,
+  #icon3 {
     font-size: 38px;
   }
 }
@@ -905,8 +903,7 @@ input::placeholder {
 /* 1024px screen */
 @media (max-width: 1024px) {
   .footer {
-    /* height: 450px; */
-    height: 600px;
+    height: auto;
   }
 
   #h2 {
@@ -926,7 +923,9 @@ input::placeholder {
     gap: 30px;
   }
 
-  #icon1, #icon2, #icon3 {
+  #icon1,
+  #icon2,
+  #icon3 {
     margin-bottom: 10px;
     font-size: 40px;
   }
